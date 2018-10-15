@@ -1,0 +1,9 @@
+#rectangle{
+  background-image: -webkit-linear-gradient(46deg, #F48381 0%, #FFC396 99%);
+  height:100px;
+  width:100px;
+  position:absolute;
+}
+body{
+
+}

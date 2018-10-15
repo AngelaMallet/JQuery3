@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.2.1.js"></script>
+  <link href="style.css" rel="stylesheet"type="text/css">
+  <title>Exercice 5</title>
+</head>
+<body>
+  <div>
+    <div id="rectangle"></div>
+  </div>
+  <form>
+      <input id="position" type="text" name="position" value="">
+  </form>
+
+  <script>
+  $("#position").click(function(){
+  $("#rectangle").animate();
+  });
+  $(document).keydown(function(e){
+   switch (e.which){
+     case 37: // fleche gauche
+       $('div').animate({left:'-=10'}); break;
+     case 38: // fleche haut
+       $('div').animate({top:'-=10'}); break;
+     case 39: // fleche droite
+       $('div').animate({left:'+=10'}); break;
+     case 40: // fleche bas
+       $('div').animate({top:'+=10'}); break;
+   }
+});
+  </script>
+</body>
+</html>

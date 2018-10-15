@@ -1,0 +1,17 @@
+.body {
+  padding:15em;
+}
+.button {
+  background-color: lightgrey;
+  box-shadow:0 2px 2px  grey ;
+   padding:50px 80px;
+   display:inline-block;
+  color: #ff5733;
+  font-family: sans-serif;
+  font-size:20px;
+}
+#rectangle {
+  background: #ff5733;
+  height:50px;
+  margin-top:30px;
+}

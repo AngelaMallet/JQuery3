@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <script src="jquery-3.2.1.js"></script>
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <button id="update" type="button">+</button>
+    <button id="downdate" type="button">-</button>
+<div id="counter">0</div>
+  </form>
+  <script>
+  var count = 0;
+
+  $("#update").click(function() {
+      count++;
+      $("#counter").html(" "+count);
+  });
+  $("#downdate").click(function() {
+      count--;
+      $("#counter").html(" "+count);
+  });
+</script>
+</body>

@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <script src="jquery-3.2.1.js"></script>
-  <title>Exercice 1</title>
+<meta charset="utf-8" />
+<script src="jquery-3.2.1.js"></script>
+<title>Exercice 1</title>
 </head>
 <body>
-  <form>
-    <div id="counter">0</div>
-    <button id="update" type="button">cliquez!</button>
-  </form>
-  <script>
-  var counter = 0;
-  $("#counter").click(counter++);
-  $('#counter').data('count', 0);
-  $('#update').click(function(){
-    $('#counter').html(function(){
-      var $this = $(this),
-      count = $this.data('count') + 1;
-      $this.data('count', count);
-      return count;
-    });
-  });
+<div id="counter">0</div>
+  <button id="update" type="button">cliquez!</button>
+
+<script>
+var counter = 0;
+$('#update').click(function(){
+counter++;
+$("#counter").text(counter)//.html est pour écrire la valeur de la balise
+});
 </script>
 </body>
